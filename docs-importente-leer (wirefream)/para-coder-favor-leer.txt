@@ -1,0 +1,10 @@
+Hola, buenos días o buenas noches, dependiendo de la hora en la que estés leyendo esto.
+
+Si lo estás leyendo, lamento no poder mostrar más del avance con respecto al sitio web de Khabib. 
+Aunque hice mucho más en CSS de lo que estoy entregando, por motivos de complejidad 
+y por tener que reencauzar (ejemplo los assets a utilizar) muchas de mis ideas, 
+me limité a presentar esto.
+En esta pre-entrega hice lo necesario para cumplir con la consigna de la entrega.
+Muchas gracias y felices fiestas.
+
+Atte. Axel

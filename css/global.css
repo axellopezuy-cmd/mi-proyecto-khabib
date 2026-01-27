@@ -1,0 +1,235 @@
+
+/*ediciones generales al contenido del body*/
+
+/*h1 titulo del header*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.h1-paginas {
+    font-family: 'oswald', sans-serif;
+    font-size: 60px;
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+p {
+        color: #f1f1f1;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 60ch;
+}
+
+/*header, menu de busqueda*/
+.menu-busqueda ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-busqueda a {
+    font-family: 'oswald', sans-serif;
+    color: goldenrod;
+    text-decoration: none;
+}
+
+/*tipografia de el sitio web*/
+.body {
+    font-family: 'oswald', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #ff0000;
+}
+
+/*videos de mi historia, equipo*/
+.video-pagina {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.video-pagina video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.body {
+    font-family: 'oswald', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+.banner-index {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background-image: url(../assets/img/banner.jpg);
+    background-size: cover;
+    background-position: center 20%;
+    background-repeat: no-repeat;
+}
+
+.banner-index::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6)
+
+}
+/*footer*/ 
+.footer img {
+    height: 40px;
+    width: 40px;
+}
+
+.footer p {
+    float: left;
+    margin: 0;
+}
+
+/*css especifico por pagina*/
+
+/*index*/
+
+/*vid index*/
+.video-index {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border-radius: 6px;
+}
+
+/*img index*/
+.media-index img {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/*galeria*/
+
+.carrusel {
+    position: relative;
+    max-width: 860px;     
+    margin: 4rem auto;
+}
+
+.carrusel-viewport {
+    height: 430px;        
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carrusel-track {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carrusel-slide {
+    min-width: 100%;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Flechas */
+
+.carrusel-bt {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.carrusel-bt.prev {
+    left: -50px;
+}
+
+.carrusel-bt.next {
+    right: -50px;
+}
+
+/* EVENTOS */
+
+.lista-eventos {
+    text-align: center;
+}
+
+.eventos {
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.evento {
+    display: inline-block;
+    width: 260px;
+    margin: 0 30px 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    vertical-align: top;
+}
+
+.evento img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.evento h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.evento p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.evento button {
+    padding: 8px 18px;
+    font-size: 13px;
+    background-color: #c2c2c2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+
+.evento button:hover {
+    background-color: #000000;
+}
+
+
+
