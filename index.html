@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khabib</title> <!-- titulo khabib para la pagina web-->
+    <title>Khabib</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--estilos globales del css--> 
     <link rel="stylesheet" href="css/global.css">
     <!--font google-->
@@ -14,14 +16,13 @@
 
 <body>
     <div class="banner-index"></div>
+    
+    <!-- HEADER original -->
     <header>
-
-        
-        <section> 
-            <h1 class="h1-paginas">Khabib "the eagle" normagomedov</h1>
-
+        <section class="text-center py-3">
+            <h1 class="h1-paginas">Khabib "The Eagle" Nurmagomedov</h1>
             <nav class="menu-busqueda">
-                <ul>         <!--manu de navegacion de la pagina web-->
+                <ul class="d-flex justify-content-center gap-4 list-unstyled mb-0">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="./pages/historia.html">Historia</a></li>
                     <li><a href="./pages/equipo.html">Equipo</a></li>
@@ -34,32 +35,51 @@
 
 <main>
     <section class="media-index">
-        <img src="assets/img/combate.jpg" alt="Khabib Nurmagomedov">
-        <img src="assets/img/index.jpg" alt="Khabib entrenando">
-        
-        <p>
-        El invicto campeón de peso ligero, maestro del grappling y orgullo de
-        Daguestán, con récord perfecto y dominio absoluto dentro del octágono.
-        </p>
-
-        <video autoplay muted loop playsinline class="video-index">
-            <source src="assets/videos/diciplina-khabib.mp4" type="video/mp4">
-            Tu navegador no soporta video HTML5.
-        </video>
+        <div class="container py-4">
+            <!-- Fila principal: Video izquierda, Imágenes derecha -->
+            <div class="row align-items-center g-4">
+                <!-- Video a la izquierda -->
+                <div class="col-12 col-md-6">
+                    <video autoplay muted loop playsinline class="video-index w-100 rounded">
+                        <source src="assets/videos/diciplina-khabib.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+                <!-- Imágenes montadas a la derecha -->
+                <div class="col-12 col-md-6">
+                    <div class="imagenes-montadas">
+                        <img src="assets/img/combate.jpg" alt="Khabib Nurmagomedov en combate" class="img-montada img-1">
+                        <img src="assets/img/index.jpg" alt="Khabib entrenando" class="img-montada img-2">
+                    </div>
+                </div>
+            </div>
+            <!-- Texto abajo -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="lead mx-auto">
+                        El invicto campeón de peso ligero, maestro del grappling y orgullo de
+                        Daguestán, con récord perfecto y dominio absoluto dentro del octágono.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
     
-    <footer class="footer"> <!-- footer con links absolutos a redes sociales de khabib-->
+    <footer class="footer">
         <p>© 2025 THE EAGLE. Todos los derechos reservados</p>
-
-        <a href="https://www.instagram.com/khabib_nurmagomedov/" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/icons/instagram-icon.png" alt="Instagram de Khabib">
-        </a>
-
-        <a href="https://x.com/TeamKhabib" target="_blank" rel="noopener noreferrer">
-            <img src="./assets/icons/twitter-icon.png" alt="X de Team Khabib"> 
-        </a>
+        
+        <div class="social-icons d-flex gap-3">
+            <a href="https://www.instagram.com/khabib_nurmagomedov/" target="_blank" rel="noopener noreferrer" title="Instagram de Khabib">
+                <img src="./assets/icons/instagram-icon.png" alt="Instagram de Khabib" class="social-icon icon-ig">
+            </a>
+            <a href="https://x.com/TeamKhabib" target="_blank" rel="noopener noreferrer" title="X de Team Khabib">
+                <img src="./assets/icons/twitter-icon.png" alt="X de Team Khabib" class="social-icon icon-twitter">
+            </a>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

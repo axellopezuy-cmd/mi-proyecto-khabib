@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khabib</title>
+    <title>Khabib - Historia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/global.css">
-        <!--font google-->
+    <!--font google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -13,13 +15,13 @@
 
 <body> 
     <div class="banner-index"></div>
+    
+    <!-- HEADER original -->
     <header>
-        
-        <section> 
-            <h1 class="h1-paginas">Khabib "the eagle" normagomedov</h1>
-
+        <section class="text-center py-3">
+            <h1 class="h1-paginas">Historia</h1>
             <nav class="menu-busqueda">
-                <ul>
+                <ul class="d-flex justify-content-center gap-4 list-unstyled mb-0">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="historia.html">Historia</a></li>
                     <li><a href="equipo.html">Equipo</a></li>
@@ -42,33 +44,32 @@
         </section>
 
         <!-- TEXTO HISTORIA -->
-        <section>
+        <section class="historia-texto">
+            <h2 class="sub-titulo-historia">Khabib</h2>
             <p>
-                <h2 class="sub-titulo-historia">Khabib</h2>
-                <br><br>
                 Invicto en el combate. Inquebrantable en sus valores.
-                <br><br>
+            </p>
+            <p>
                 Khabib Nurmagomedov nació y creció en las montañas de Daguestán, un lugar
                 donde la vida es dura y la disciplina no se negocia.
-                <br>
                 Desde pequeño, la lucha fue parte de su rutina diaria, no como un deporte,
                 sino como una forma de forjar carácter.
-                <br>
                 Su padre, Abdulmanap Nurmagomedov, fue su mayor influencia: le enseñó que el
                 respeto, la humildad y el autocontrol valen más que cualquier victoria.
-                <br><br>
+            </p>
+            <p>
                 El entrenamiento fue extremo, repetitivo y exigente. Cada día era una
                 prueba mental antes que física. Así nació su mentalidad de hierro, basada
                 en la constancia y el sacrificio.
-                <br>
                 Cuando llegó a la UFC, Khabib no buscó espectáculo ni provocación.
-                <br><br>
+            </p>
+            <p>
                 Pelea tras pelea, construyó una carrera invicta, demostrando que el
                 verdadero dominio no necesita arrogancia.
-                <br>
                 Tras la muerte de su padre, eligió retirarse en la cima, cumpliendo su
                 palabra y priorizando a su familia por encima de la gloria.
-                <br><br>
+            </p>
+            <p>
                 Khabib dejó el deporte sin conocer la derrota, pero su legado va más allá
                 del récord.
             </p>
@@ -76,18 +77,20 @@
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <p>© 2025 THE EAGLE. Todos los derechos reservados</p>
-
-        <a href="https://www.instagram.com/khabib_nurmagomedov/" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/icons/instagram-icon.png" alt="Instagram de Khabib" 
-        </a>
-
-        <a href="https://x.com/TeamKhabib" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/icons/twitter-icon.png" alt="X de Team Khabib">
-        </a>
+        
+        <div class="social-icons d-flex gap-3">
+            <a href="https://www.instagram.com/khabib_nurmagomedov/" target="_blank" rel="noopener noreferrer" title="Instagram de Khabib">
+                <img src="../assets/icons/instagram-icon.png" alt="Instagram de Khabib" class="social-icon icon-ig">
+            </a>
+            <a href="https://x.com/TeamKhabib" target="_blank" rel="noopener noreferrer" title="X de Team Khabib">
+                <img src="../assets/icons/twitter-icon.png" alt="X de Team Khabib" class="social-icon icon-twitter">
+            </a>
+        </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
