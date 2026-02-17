@@ -1,0 +1,26 @@
+{
+  "name": "mi-proyecto-khabib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "sass scss/main.scss css/global.css --no-source-map",
+    "watch:css": "sass scss/main.scss css/global.css --watch --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axellopezuy-cmd/mi-proyecto-khabib.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/axellopezuy-cmd/mi-proyecto-khabib/issues"
+  },
+  "homepage": "https://github.com/axellopezuy-cmd/mi-proyecto-khabib#readme",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

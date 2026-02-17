@@ -1,0 +1,38 @@
+// ============================================
+// FOOTER
+// ============================================
+
+.footer {
+    background-color: $color-overlay-dark;
+    padding: 1.5rem 2rem;
+    @include flex-between;
+
+    p {
+        color: $color-light;
+        margin: 0;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    height: 40px;
+    width: 40px;
+    @include transition(transform);
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.icon-ig {
+    filter: brightness(0) invert(1);
+}

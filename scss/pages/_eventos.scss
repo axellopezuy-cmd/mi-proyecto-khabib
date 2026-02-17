@@ -1,0 +1,50 @@
+// ============================================
+// PÁGINA EVENTOS
+// ============================================
+
+.eventos {
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.evento {
+    display: inline-block;
+    width: 260px;
+    margin: 0 30px 40px;
+    padding: 20px;
+    background-color: $color-white;
+    border-radius: $border-radius;
+    vertical-align: top;
+
+    img {
+        @include img-cover(160px);
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: $font-size-base;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: $font-size-small;
+        color: $color-gray;
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 8px 18px;
+        font-size: 13px;
+        background-color: #c2c2c2;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        @include transition(background-color);
+
+        &:hover {
+            background-color: #000;
+            color: $color-white;
+        }
+    }
+}

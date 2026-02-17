@@ -1,0 +1,29 @@
+// ============================================
+// CARRUSEL (Galería)
+// ============================================
+
+#galeriaCarousel {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: $border-radius;
+}
+
+.carousel-img {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: #000;
+
+    @include mobile {
+        max-height: 300px;
+    }
+
+    @include tablet {
+        max-height: 400px;
+    }
+
+    @include desktop {
+        max-height: 500px;
+    }
+}

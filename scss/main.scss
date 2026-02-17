@@ -1,0 +1,26 @@
+// ============================================
+// MAIN SCSS - Archivo principal
+// ============================================
+
+// Abstracts (variables y mixins primero)
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset';
+
+// Layout
+@import 'layout/banner';
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
+@import 'components/video';
+@import 'components/cards';
+@import 'components/carousel';
+
+// Pages
+@import 'pages/index';
+@import 'pages/historia';
+@import 'pages/equipo';
+@import 'pages/eventos';

@@ -1,0 +1,33 @@
+// ============================================
+// PÁGINA HISTORIA
+// ============================================
+
+.historia-texto {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    p {
+        color: $color-light;
+    }
+
+    @include mobile {
+        padding: 1.5rem 1rem;
+    }
+
+    @include desktop {
+        padding: 3rem;
+    }
+}
+
+.sub-titulo-historia {
+    font-family: $font-main;
+    font-size: 2.5rem;
+    color: $color-secondary;
+    text-align: center;
+    margin-bottom: 1.5rem;
+
+    @include mobile {
+        font-size: 1.8rem;
+    }
+}

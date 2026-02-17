@@ -1,0 +1,34 @@
+// ============================================
+// CARDS (Equipo y Eventos)
+// ============================================
+
+.equipo-card,
+.evento.card {
+    background-color: $color-card-bg;
+    @include card-hover;
+
+    .card-img-top {
+        @include img-cover(200px);
+
+        @include mobile {
+            height: 150px;
+        }
+
+        @include tablet {
+            height: 180px;
+        }
+
+        @include desktop {
+            height: 220px;
+        }
+    }
+}
+
+.card-title {
+    font-family: $font-main;
+    color: #333;
+}
+
+.card-text {
+    color: $color-gray;
+}

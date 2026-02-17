@@ -1,0 +1,57 @@
+// ============================================
+// MIXINS
+// ============================================
+
+// Media queries
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+// Flexbox centrado
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Flexbox entre extremos
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Imagen cover
+@mixin img-cover($height: auto) {
+    width: 100%;
+    height: $height;
+    object-fit: cover;
+    border-radius: $border-radius;
+}
+
+// Transición suave
+@mixin transition($property: all) {
+    transition: $property $transition-base;
+}
+
+// Card hover
+@mixin card-hover {
+    @include transition(transform);
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

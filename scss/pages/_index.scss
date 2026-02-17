@@ -1,0 +1,55 @@
+// ============================================
+// PÁGINA INDEX
+// ============================================
+
+.media-index {
+    .lead {
+        color: $color-light;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: $border-radius-sm;
+    }
+}
+
+// Imágenes montadas
+.imagenes-montadas {
+    @include flex-center;
+    gap: 20px;
+    padding: 20px;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.img-montada {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: $border-radius;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    &.img-1 {
+        transform: rotate(-5deg);
+    }
+
+    &.img-2 {
+        transform: rotate(5deg);
+        margin-top: 30px;
+
+        @include mobile {
+            margin-top: 0;
+        }
+    }
+
+    @include mobile {
+        width: 160px;
+        height: 200px;
+    }
+}
